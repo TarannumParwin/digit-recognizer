@@ -38,6 +38,9 @@ print("Training completed!")
 loss, accuracy = model.evaluate(x_test, y_test)
 print(f"Test Accuracy: {accuracy}")
 
+# Save the model
+model.save("model.h5")
+print("✅ Model saved as model.h5")
 
 # Make predictions on test data
 predictions = model.predict(x_test)
